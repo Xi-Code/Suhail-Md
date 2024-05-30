@@ -124,7 +124,7 @@ global.aitts_Voice_Id = process.env.AITTS_ID|| "37";
 
 
 global.rank = "updated"
-global.isMongodb = false; 
+global.isMongodb = true; 
 let file = require.resolve(__filename)
 fs.watchFile(file, () => { fs.unwatchFile(file);console.log(`Update'${__filename}'`);delete require.cache[file];	require(file); })
  
